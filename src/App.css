@@ -1,0 +1,164 @@
+:root {
+    --bc: #191919;
+    --mc: #eb2357;
+    --sb: #fcd60a;
+    --pc: #4bc4de;
+    --fc: #fff;
+}
+
+* { outline: 1px solid #f00;}
+
+body {
+    background: #191919;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+}
+.Wrap{
+
+}
+
+/* 공통 */
+
+.hd_wrap { max-width: 1200px; width: 100%; margin: 0 auto;}
+
+/* 헤더 Top */
+.top_service {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_right_s>ul {display: flex; gap: 30px;}
+.top_right_s .project img {
+    margin-right: 10px;
+}
+
+
+/* 언어박스  */
+.top_right_s .lang {
+    position: relative;
+    float: left;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+    color: var(--mc);
+}
+
+.top_right_s .lang .arrow {
+font-size: 7px;
+vertical-align: 0.3em;
+}
+
+.top_right_s .lang.on .arrow {
+transform: rotate(180deg);
+}
+
+.top_right_s .lang .lang_box {
+display: none;
+position: absolute;
+top: 25px;
+left: 50%;
+padding: 8px 12px;
+transform: translateX(-50%);
+
+line-height: 1.45;
+border: 1px solid var(--fc);
+border-radius: 10px;
+background: var(--bc);
+color: var(--fc);
+}
+
+.top_right_s .lang.on .lang_box {
+    display: block;
+}
+
+.top_right_s .lang_box li:hover {
+    color: var(--mc);
+}
+
+/* 헤더 Bottom */
+.btm_service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btm_service .Gnb ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    font-size: 17px;
+}
+.btm_service .Gnb ul>li:hover {
+    color: var(--sb);
+}
+
+/* 헤더 Bottom right 서비스 */
+.btm_right_s {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.btm_opstore p {
+    display: inline-block;
+    padding: 5px 10px;
+
+    border: 2px solid var(--sb);
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--sb);
+}
+
+.btm_join ul {
+    display:  flex;
+    gap: 30px;
+}
+
+.btm_join img {
+    width: 28px;
+    height: 28px;
+}
+
+
+
+/* MainVisual */
+.MainVisual {
+    padding: 50px 0;
+    max-height: 666px;
+    height: 100%;
+}
+
+  
+.MainVisual figure {
+    position: relative;
+    border: 20px;
+}
+
+.MainVisual figure img {
+    width: 476px;
+    height: 666px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.MainVisual .slideNum {
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+    margin: 0 0 0 -600px;
+}
+
+.MainVisual .slideTab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    margin: 0 0 0 600px;
+}
+
+.MainVisual .dots-li {
+    color: var(--fc);
+}
+

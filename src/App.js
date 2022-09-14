@@ -5,9 +5,9 @@ import MainVisual from './component/MainVisual';
 function App() {
   return (
     <div className='Wrap'>
-      <Header/>
+      <Header />
       <main>
-          <MainVisual/>
+        <MainVisual />
       </main>
     </div>
   )

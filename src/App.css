@@ -6,7 +6,7 @@
     --fc: #fff;
 }
 
-* { outline: 1px solid #f00;}
+* { outline: 1px solid #--f00;}
 
 body {
     background: #191919;
@@ -134,6 +134,7 @@ color: var(--fc);
 .MainVisual figure {
     position: relative;
     border: 20px;
+    padding: 0 20px 0 0;
 }
 
 .MainVisual figure img {
@@ -143,7 +144,7 @@ color: var(--fc);
     border-radius: 30px;
 }
 
-.MainVisual .slideNum {
+/* .MainVisual .slideNum {
     position: absolute;
     bottom: 50%;
     left: 20%;
@@ -156,9 +157,40 @@ color: var(--fc);
     left: 50%;
     transform: translate(-100%, -50%);
     margin: 0 0 0 600px;
-}
+} */
 
 .MainVisual .dots-li {
     color: var(--fc);
 }
 
+.MainVisual .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.MainVisual .slick-dots {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.MainVisual .slick-dots li {
+    width: 50px;
+    height: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    color: #fff;
+}
+
+.MainVisual .slick-dots li.slick-active {
+    border-radius: 10px;
+    background: rgba(245, 33, 88, 1) !important;
+}

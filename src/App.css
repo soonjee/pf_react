@@ -6,7 +6,7 @@
     --fc: #fff;
 }
 
-* { outline: 1px solid #--f00;}
+* { outline: 1px solid #f00;}
 
 body {
     background: #191919;
@@ -190,12 +190,12 @@ color: var(--fc);
     display: block;
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0 0 70px 0;
 }
 
 .MainVisual .dost-css {
     position: absolute;
-    bottom: -50px;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
@@ -216,3 +216,56 @@ color: var(--fc);
 
 .MainVisual .dost-css li.slick-active { background: rgba(245, 33, 88, 1); }
 .MainVisual .dost-css li button { display: none; }
+
+/* MainVisual01 */
+.slick-initialized .slick-slide {
+    display: block;
+    padding-right: 15px;
+}
+
+.first_sd { padding : 50px 0 0 0; }
+.first_sd .box {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: #fcd60a;
+}
+
+.first_sd .box a { display: flex;}
+.first_sd .pf img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.first_sd .box a {
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--bc);
+}
+
+/* box2 */
+.scd_sd { padding : 15px 0 50px 0; }
+.scd_sd .box2 {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: #fcd60a;
+}
+
+.scd_sd .box2 a { display: flex;}
+.scd_sd .pf img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.scd_sd .box2 a {
+    align-items: center;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--bc);
+}

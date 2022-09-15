@@ -32,6 +32,7 @@ const MainVisual = () => {
         autoplay: true,
         autoplaySpeed: 5000,
     }
+    
     return (
         <section className='MainVisual'>
             <div className="container">

@@ -3,6 +3,7 @@ import Header from './component/Header';
 import MainVisual from './component/MainVisual';
 import AutoSlide01 from './component/AutoSlide01';
 import AutoSlide02 from './component/AutoSlide02';
+import Produce from './component/Produce';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <MainVisual />
         <AutoSlide01 />
         <AutoSlide02 />
+        <Produce/>
       </main>
     </div>
   )

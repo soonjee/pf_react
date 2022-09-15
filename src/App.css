@@ -14,15 +14,32 @@ body {
     line-height: 1.5;
     color: #fff;
 }
-.Wrap{
-
-}
-
 /* 공통 */
 
-.hd_wrap { max-width: 1200px; width: 100%; margin: 0 auto;}
+/* input */
+input {
+    width: 230px;
+    height: 32px;
+    font-size: 15px;
+    border: 0;
+    border-radius: 15px;
+    outline: none;
+    padding: 0 40px 0 15px;
+    background-color: rgb(233, 233, 233);
+}
+.search_box { position: relative;}
+.search_box i {
+position: absolute;
+top: 5px;
+right: 15px;
+font-size: 21px;
+font-weight: 500;
+color: var(--bc);
+}
 
 /* 헤더 Top */
+.hd_wrap { max-width: 1200px; width: 100%; margin: 0 auto;}
+
 .top_service {
     display: flex;
     padding: 20px 0;
@@ -34,7 +51,6 @@ body {
 .top_right_s .project img {
     margin-right: 10px;
 }
-
 
 /* 언어박스  */
 .top_right_s .lang {
@@ -103,12 +119,19 @@ color: var(--fc);
 
 .btm_opstore p {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 5px 15px;
 
     border: 2px solid var(--sb);
     border-radius: 20px;
     font-size: 14px;
     color: var(--sb);
+}
+
+.btm_opstore p:hover {
+    transition: 0.2s;
+    font-weight: 500;
+    color: var(--bc);
+    background: var(--sb);
 }
 
 .btm_join ul {
@@ -125,8 +148,7 @@ color: var(--fc);
 
 /* MainVisual */
 .MainVisual {
-    padding: 50px 0;
-    max-height: 666px;
+    padding: 50px 20px;
     height: 100%;
 }
 
@@ -171,26 +193,26 @@ color: var(--fc);
     padding: 0;
 }
 
-.MainVisual .slick-dots {
+.MainVisual .dost-css {
     position: absolute;
     bottom: -50px;
     width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
     text-align: center;
 }
 
-.MainVisual .slick-dots li {
-    width: 50px;
-    height: 20px;
-    margin: 0 auto;
-    border-radius: 10px;
-    background: #fff;
-    color: #fff;
+.MainVisual .dost-css li {
+    display: inline-block;
+    width: 172px;
+    height: 6px;
+    background: #333;
 }
 
-.MainVisual .slick-dots li.slick-active {
-    border-radius: 10px;
-    background: rgba(245, 33, 88, 1) !important;
+.MainVisual .dost-css li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
 }
+
+.MainVisual .dost-css li.slick-active { background: rgba(245, 33, 88, 1); }
+.MainVisual .dost-css li button { display: none; }

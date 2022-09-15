@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, state } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,25 +24,13 @@ const MainVisual = () => {
     const setting = {
         arrows: false,
         dots: true,
+        dotsClass: 'dost-css',
         slidesToShow: 4,
         slidesToScroll: 1,
+        centerMode: false,
         afterChange: index => setIDX(index),
         autoplay: true,
         autoplaySpeed: 5000,
-        // customPaging: i => (
-        //     <div
-        //         style={{
-        //             width: "1260px",
-        //             height: "10px",
-        //             margin: "0 auto",
-        //             borderRadius: "10px",
-        //             background: "#fff",
-        //             color: "#333"
-        //         }}>
-        //         {i + 1}
-        //     </div >
-        // )
-
     }
     return (
         <section className='MainVisual'>
@@ -62,7 +50,6 @@ const MainVisual = () => {
                             })
                         }
                     </Slider>
-
                     {/* <div className="slideNum">
                         0{IDX + 1}<span> / 0{SLIDE.length}</span>
                     </div>

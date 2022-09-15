@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './component/Header';
 import MainVisual from './component/MainVisual';
+import AutoSlide from './component/AutoSlide';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <main>
         <MainVisual />
+        <AutoSlide />
       </main>
     </div>
   )

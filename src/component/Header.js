@@ -23,7 +23,7 @@ const Header = () => {
                     </h1>
                     <div className='top_right_s'>
                         <ul className="project">
-                            <li>    
+                            <li>
                                 <a href="#!">
                                     <img src={process.env.PUBLIC_URL + "/assets/img/ico_login.png"} alt="" />LOGIN
                                 </a>
@@ -43,7 +43,7 @@ const Header = () => {
                                 </ul>
                             </div>
                         </ul>
-                        
+
                     </div>
                 </div>
 
@@ -70,29 +70,29 @@ const Header = () => {
                             <div className="search_box">
                                 <form action="#!">
                                     <input type="text" placeholder="귀여운 고양이 굿즈 기획전!" required />
-                                    <button>
-                                        <i className="xi-search"></i>
-                                    </button>
+                                    <a href=""> <i className="xi-search"></i></a>
                                 </form>
                             </div>
                         </div>
                         {/* 입점신청 */}
                         <div className='btm_opstore'>
-                            <p>입점신청</p>
+                            <a href=""><p> 입점신청</p></a>
                         </div>
                         {/* join 3종 */}
                         <div className='btm_join'>
-                            <ul>
-                                <li>
-                                    <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon01.png"} alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon02.png"} alt="" /></a>
-                                </li>
-                                <li>
-                                    <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon03.png"} alt="" /></a>
-                                </li>
-                            </ul>
+                            <a href="">
+                                <ul>
+                                    <li>
+                                        <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon01.png"} alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon02.png"} alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="#!"><img src={process.env.PUBLIC_URL + "/assets/img/icon03.png"} alt="" /></a>
+                                    </li>
+                                </ul>
+                            </a>
                         </div>
                     </div>
                 </div>

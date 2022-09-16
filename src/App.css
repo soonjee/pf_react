@@ -310,6 +310,11 @@ color: var(--fc);
     border-radius: 30px;
 }
 
+.sc .cba_box img:hover {
+    transform: rotate(2deg);
+    transition: 0.1s;
+}
+
 /* Footer */
 .Footer { background: #222; }
 .Footer .ft_inr {

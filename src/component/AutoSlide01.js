@@ -15,37 +15,39 @@ const SD = [
 
 const AutoSlide01 = () => {
     const setting = {
-        arrows:false,
-        autoplay:true, //멈춰놓음
-        autoplaySpeed:0,
+        arrows: false,
+        autoplay: true, //멈춰놓음
+        autoplaySpeed: 0,
         //pauseOnHover:false,
-        pauseOnFocus:false,
-        dots:false,
-        speed:4000,
+        pauseOnFocus: false,
+        dots: false,
+        speed: 4000,
         centerMode: true,
         variableWidth: true,
-        cssEase:"linear",
+        cssEase: "linear",
     }
 
     return (
-        <div className='first_sd'>
-            <Slider {...setting} >
-                {
-                    SD.map(sd => {
-                        return (
-                            <div className="box">
-                                <a href='#!'>
-                                    <figure className='pf'>
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/pf1_" + sd.id + ".jpg"} alt="" />
-                                    </figure>
-                                    <p className='nm'>{sd.name}</p>
-                                </a>
-                            </div>
-                        )
-                    })
-                }
-            </Slider>
-        </div>
+        <section className='first_sd'>
+            <div className="sd_inr">
+                <Slider {...setting} >
+                    {
+                        SD.map(sd => {
+                            return (
+                                <div className="box">
+                                    <a href='#!'>
+                                        <figure className='pf'>
+                                            <img src={process.env.PUBLIC_URL + "/assets/img/pf1_" + sd.id + ".jpg"} alt="" />
+                                        </figure>
+                                        <p className='nm'>{sd.name}</p>
+                                    </a>
+                                </div>
+                            )
+                        })
+                    }
+                </Slider>
+            </div>
+        </section>
     )
 }
 

@@ -1,3 +1,6 @@
+/* 공통 */
+* { outline: 1px solid #f00;}
+
 :root {
     --bc: #191919;
     --mc: #eb2357;
@@ -6,8 +9,6 @@
     --fc: #fff;
 }
 
-* { outline: 1px solid #f00;}
-
 body {
     background: #191919;
     font-size: 14px;
@@ -15,10 +16,19 @@ body {
     color: #fff;
 }
 
+/* 섹션 1200px 기본값 */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+/* 슬라이드 width기본값 */
+.sd_inr { 
+    width: 100%;
+    margin: 0 auto;
+}
 
-/* 공통 */
-
-/* input */
+/* Header - input 검색bar */
 input {
     width: 230px;
     height: 32px;
@@ -31,17 +41,15 @@ input {
 }
 .search_box { position: relative;}
 .search_box i {
-position: absolute;
-top: 5px;
-right: 15px;
-font-size: 21px;
-font-weight: 500;
-color: var(--bc);
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 21px;
+    font-weight: 500;
+    color: var(--bc);
 }
 
 /* 헤더 Top */
-.hd_wrap { max-width: 1200px; width: 100%; margin: 0 auto;}
-
 .top_service {
     display: flex;
     padding: 20px 0;
@@ -152,6 +160,11 @@ color: var(--fc);
 .MainVisual {
     padding: 50px 20px;
     height: 100%;
+}
+
+.MainVisual .inner { 
+    width: 100%;
+    margin: 0 auto;
 }
 
   
@@ -281,10 +294,85 @@ color: var(--fc);
 }
 
 .sc .banner {
-    padding: 0 0 100px 0;  
+    padding: 0 0 100px 0; 
+}
+
+.sc .banner img {
+    border-radius: 30px;
 }
 
 .sc .cba_box {
     display: flex;
     gap: 30px;
+}
+
+.sc .cba_box img {
+    border-radius: 30px;
+}
+
+/* Footer */
+.Footer { background: #222; }
+.Footer .ft_inr {
+    display: flex;
+    padding: 50px 0;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between
+}
+.Footer .ft_left {
+    display: inline-block;
+    margin: 0 60px 0 0;
+}
+
+.Footer .ft_left .ft_f {
+    margin-bottom: 20px;
+}
+
+.Footer .ft_sns {
+    display: flex;
+    justify-content: space-between;
+}
+.Footer .ft_sns img {
+    width: 44px;
+    height: 44px;
+}
+
+/* 푸터 right top */
+.Footer .ft_right {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    width: 980px;
+    box-sizing: border-box;
+}
+.Footer .ft_list { 
+    padding-bottom: 28px;
+    border-bottom: 1px solid #444;
+}
+
+.Footer .ft_list dl {
+    display: flex;
+    gap: 50px;
+}
+
+.Footer .list_btn {
+    position: absolute;
+    top: -9px;
+    right: 0;
+}
+.Footer .list_btn ul {
+    display: flex;
+}
+.Footer .list_btn li {
+    padding: 8px 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--fc);
+    color: var(--fc);
+}
+.Footer .list_btn li:hover {
+    transition: 0.2s;
+    color: var(--bc);
+    background-color: var(--fc);
 }

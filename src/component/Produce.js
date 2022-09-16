@@ -1,12 +1,13 @@
 const CBA = [
-    {id:1, },
-    {id:2, },
-    {id:3, }
+    { id: 1, },
+    { id: 2, },
+    { id: 3, }
 ]
 
 const Produce = () => {
     return (
         <section className="sc">
+            <div className="container">
                 <div className="banner">
                     <figure>
                         <img src={process.env.PUBLIC_URL + "/assets/img/banner01.jpg"} alt="" />
@@ -16,15 +17,15 @@ const Produce = () => {
                     {
                         CBA.map(cba => {
                             return (
-                                
-                                    <figure>
-                                        <img src={process.env.PUBLIC_URL + "/assets/img/cba01_" + cba.id + ".png"} alt="" />
-                                    </figure>
+
+                                <figure>
+                                    <img src={process.env.PUBLIC_URL + "/assets/img/cba01_" + cba.id + ".png"} alt="" />
+                                </figure>
                             )
                         })
                     }
                 </div>
-                
+            </div>
         </section>
     )
 }

@@ -32,10 +32,10 @@ const MainVisual = () => {
         autoplay: true,
         autoplaySpeed: 5000,
     }
-    
+
     return (
         <section className='MainVisual'>
-            <div className="container">
+            <div className="sd_inr">
                 {/* 메인비주얼 슬라이드 */}
                 <div className="slide">
                     <Slider {...setting} ref={mainSlide}>

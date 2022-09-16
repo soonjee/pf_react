@@ -69,6 +69,25 @@ const Footer = () => {
                                 (주) 샌드박스 네트워크는 일체의 책임을 지지 않습니다.
                             </copy>
                         </div>
+                        <div className="ft_center">
+                            <strong className="ct_tit">반품배송지</strong>
+                            <p className="ct_des">
+                                경기도 광주시 도척면 도척로 376-68<br />
+                                엠케이물류 MEMEZ
+                            </p>
+                            <strong className="ct_tit">CUSTOMER CENTER</strong>
+                            <p className="ct_num">1533-0652</p>
+                            <p className="ct_des">
+                                AM 10:00 ~ PM 05:00<br />
+                                Off-time PM 01:00 ~ PM 02:00<br />
+                                SATURDAY. SUNDAY, HOLIDAY OFF<br />
+                                cs@memez.kr
+                            </p>
+                            <ul className="ct_btn">
+                                <li><a href="">Q&amp;A</a></li>
+                                <li><a href="">FAQ</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

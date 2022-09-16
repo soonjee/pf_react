@@ -376,3 +376,48 @@ color: var(--fc);
     color: var(--bc);
     background-color: var(--fc);
 }
+
+.ft_right_btm {
+    display: flex;
+    margin-top: 20px;
+}
+
+.ft_right_btm .ft_address {
+    display: inline-block;
+    margin-right: 90px;
+    font-size: 12px;
+    color: #B4B4B4;
+}
+
+.ft_right_btm .ft_address address {
+    margin-bottom: 30px;
+}
+
+.ft_center {
+    display: inline-block;
+}
+.ft_center .ct_tit { font-size: 15px; font-weight: 400;}
+.ft_center .ct_des {
+    font-size: 12px;
+    color: #B4B4B4;
+    margin-bottom: 30px;
+}
+.ft_center .ct_num {
+    font-size: 25px;
+    font-weight: 600;
+}
+.ft_center .ct_btn {
+    display: flex;
+}
+
+.ft_center .ct_btn li {
+font-size: 13px;
+    color: #b4b4b4;
+    border: 1px solid #999;
+    border-radius: 30px;
+    display: inline-block;
+    width: 54px;
+    line-height: 26px;
+    margin-right: 10px;
+    text-align: center;
+}

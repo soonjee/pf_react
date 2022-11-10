@@ -8,7 +8,7 @@ const SD = [
     { id: 4, name: "이상한 변호사 우영우", link: "/a" },
     { id: 5, name: "예랑가랑", link: "/a" },
     { id: 6, name: "주호민", link: "/a" },
-    { id: 7, name: "ITZY", link: "/a" },
+    { id: 7, name: "ITZY", link: "/a", singer: true },
     { id: 8, name: "엠드로메다", link: "/a" },
     { id: 9, name: "디앤씨웹툰스토어", link: "/a" } //연예인만 데이터값 따로 받아서 컬러지정하는 방법은 몰까?
 ]

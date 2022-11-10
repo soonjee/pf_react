@@ -14,10 +14,9 @@ const SLIDE = [
 ]
 
 const MainVisual = () => {
-    const [IDX, setIDX] = useState();
+    const [setIDX] = useState();
 
     useEffect(() => {
-        setIDX(0)
     }, []);
 
     const mainSlide = useRef(null);
